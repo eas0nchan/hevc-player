@@ -1,0 +1,33 @@
+{
+  "name": "hevc-player",
+  "version": "0.0.0",
+  "description": "",
+  "author": "Eason Chan",
+  "keywords": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eas0nchan/hevc-player.git"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/hevc-player.cjs",
+  "module": "./dist/hevc-player.js",
+  "exports": {
+    ".": {
+      "require": "./dist/hevc-player.cjs",
+      "import": "./dist/hevc-player.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^3.2.0",
+    "vitest": "^0.25.3"
+  }
+}
